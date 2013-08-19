@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  custom_blurb: MyText
+  url: MyString
+  product_id: 1
+  address: MyString
+  zipcode: 1
+
+two:
+  custom_blurb: MyText
+  url: MyString
+  product_id: 1
+  address: MyString
+  zipcode: 1
