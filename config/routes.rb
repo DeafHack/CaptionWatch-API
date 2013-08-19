@@ -1,13 +1,8 @@
 CaptionWatchApi::Application.routes.draw do
-  get "templates/create"
-  get "templates/index"
-  get "templates/show"
-  get "products/create"
-  get "products/index"
-  get "products/show"
-  get "companies/create"
-  get "companies/index"
-  get "companies/show"
+  resources :complaints, except: :edit
+  resources :templates, except: :edit
+  resources :products, except: :edit
+  resources :companies, except: :edit
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
