@@ -1,7 +1,4 @@
 CaptionWatchApi::Application.routes.draw do
-  get "complaints/create"
-  get "complaints/index"
-  get "complaints/show"
   resources :complaints, except: :edit
   resources :templates, except: :edit
   resources :products, except: :edit

@@ -11,6 +11,15 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'geocoder'
 gem 'faker'
+gem 'hashie'
+
+
+group :development do
+  gem 'pry-rails'
+  gem 'pry-remote', '~> 0.1.7'
+  gem 'awesome_print'
+  gem 'annotate'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

@@ -1,7 +1,8 @@
 class ComplaintsController < ApplicationController
   def create
-    c = Complaint.new(complaint_params)
-    c.save!
+    c = Complaint.create(complaint_params)
+
+    render json: c
   end
 
   def index
@@ -11,7 +12,7 @@ class ComplaintsController < ApplicationController
       @complaints = Complaint.all
     end
 
-    render json: @complaints    
+    render json: @complaints
   end
 
   def show
